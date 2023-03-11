@@ -1,0 +1,21 @@
+DATE: 11/02/23 - 11 MARCH 2023
+
+
+BOOTSTRAP
+
+A Front-End Library
+
+Frontend - what the user sees (the visuals aspects of your website) - animations, images
+Backend - the behind logic (how your website works) - server, database
+
+Eg: Frontend - Javascript, CSS, HTML
+    Backend - .NET, Ruby, Java, PHP, SQL, NodeJS
+
+
+Bootstrap allows responsive functionalities 
+- changes its design according to the devices your website is opened on.
+
+
+Will include in our HTML code via the CDN (Content Delivery Network)
+		
+
