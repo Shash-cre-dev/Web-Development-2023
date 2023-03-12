@@ -1,0 +1,23 @@
+The first thing to do in creating a website is wireframing
+
+wireframes are low-fidelity representations of your website design
+It is meant to be done with pencil on paper etc
+
+The idea is to settle on a design before coding it
+
+Wireframes - low fidelity (looks really simple) & shouldn't take too much time to produce
+
+Mockup - high-fidelity representations of your website design
+	 - what your website will look like when you have created it
+	 - precisely what you want to it
+
+
+Wireframes - basic layout using pen and sketching / Figma / canva
+Mockup - using adobe illustrator/ Figma / canva
+
+The best examples of web design are on dribble
+
+Create a Wireframe for your Startup
+
+Practice is done on Figma
+
