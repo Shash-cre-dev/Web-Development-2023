@@ -5,6 +5,8 @@ BOOTSTRAP
 
 A Front-End Library
 
+The library consists of pre-written code which can be used to simplify our tasks in creating a website
+
 Frontend - what the user sees (the visuals aspects of your website) - animations, images
 Backend - the behind logic (how your website works) - server, database
 
