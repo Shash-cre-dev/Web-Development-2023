@@ -1,0 +1,108 @@
+Nav Bar
+
+To point to the links for the various section (webpages) of the website
+adding classes to the nav,
+
+class = "navbar" applies all the CSS 
+offered via the Bootstrap
+
+All the modifications are applied from the class names
+
+for ul - add class navbar-nav
+for individual elements of the nav bar
+that are present in the li use class = "nav-item"
+
+The items of the nav bar must contain links to access various sections of the website so we
+use anchor tags <a> inside <li> elements
+for <a> we use class "nav-link"
+
+When creating multiple nav items via the li, the items are 
+stacked vertically on top of the other in their order of creation
+
+for horizontal allignment  use 
+navbar-expand-lg with the class "navbar" inside
+nav
+
+Eg: <nav class="navbar navbar-expand-lg">
+Strectches the nav bar horizontally to the space available on the screen
+
+lg-means large
+md-means medium
+
+<nav class="navbar navbar-expand-lg bg-light">
+makes the nav bar visible with a light background
+
+bg- has special words saved for appyling different colours 
+to the background
+bg-primary - blue colour
+bg-secondary - grey colour
+bg-success - green color
+bg-danger - red colour
+bg-warning - yellow colour
+bg-info - light blue color
+bg-light - white colour
+bg-dark - black colour
+bg-linl - for link in blue with underline
+
+they can be used with navbar- for much significant effects
+makes the nav bar appear with dark with significant effects
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+
+
+For adding Brand Name 
+
+<a class="navbar-brand" href="">tindog</a>
+it will be placed inside <nav> immediately before
+<ul> so that Brand Name appears first in the Nav Bar
+
+
+For adding space between the Barnd Name and Nav Bar elements
+
+target the specific element which contains nav elements
+and use ms-auto in the class name here that would be ul
+
+ul class="nav-bar ms-auto"
+makes the space between Brand Name and Nav Elements the max - they ares hifted to extreme right
+
+margin space- auto
+
+
+For Hamburger Menu - Dropdown menu
+When the size of screen is shrinked below a certain limit of the screen
+use the following following button below the Brand Name
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id_name" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+</button>
+
+Enclose the list elements (ul) inside a div and give it a specific id which can be used to target the 
+drop down menu when the screen size is reduced in data-bs-target section 
+
+<div collapse navbar-collapse id="id_name"> <ul> </ul> </div>
+class="collapse navbar-collapse" enables the div to collapse when size of screen is shrinked
+
+
+When used above brand name, Brand Name shifts to right
+When Brand Name placed inside div- it will also come under the 
+drop down menu when size of screen shrinked.
+
+Final code from codeply.com Bootstrap 5 Starter for Nav Bar
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="">tindog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Download</a>
+        </li>
+    </ul>
+    </div>
+</nav>
