@@ -1,0 +1,86 @@
+DATE: 15/03/23 - 15 March 2023
+
+Learning Tailwind CSS from start to finish.
+
+BASICS
+
+Tailwind CSS is a utility-first framework which allows you to style your HTML pages without leaving your HTML file.
+
+The simple explanation of this is that you will have to add some utility classes within the HTML <tags>, and you can design your pages easily
+by simply including these classes.
+
+You will not have to write down CSS explicitly.
+
+Advantages of Tailwind
+
+Another reason to use Tailwind is its easy-to-use nature because when you write CSS explicitly in a different file and map it with the HTML file,
+you might face some problems. But, when you mention the styles within the HTML file using tailwind utility classes,
+the experience of development is enhanced and can be experienced only once you start making projects using Tailwind CSS.
+
+STANDARD WEBSITE WORKFLOW
+
+The standard workflow to design a website using HTML, CSS and Vanilla JavaScript
+looks somewhat like this.
+1) You create HTML files first, followed by CSS files.
+2) We use IDs and classes in our HTML files and you style those IDs and classes in the CSS files.
+
+As a result, you must exit the HTML file and enter the CSS file while styling.
+Repeatedly switching between HTML, CSS or JavaScript is a pain in the neck while creating a project,
+as going back and forth from the HTML and CSS files to design and remap it.
+
+TAILWIND WORKFLOW
+
+In Tailwind CSS, the workflow will look somewhat like this:
+1) First, you shall set up Tailwind CSS and after include Tailwind CSS within your HTML file.
+2) You will only have to write the HTML code within the HTML files. Without making separate CSS files.
+
+Furthermore, the tag where you insert classes will be styled immediately and after reading only the HTML file, you will realize the
+particular designs and styles an HTML tag is using.
+
+
+
+
+TAILWIND SETUP (ONE WAY - SIMPLE WAY - VIA PLAYCDN)
+
+We shall learn how to set up Tailwind CSS and its workflow, 
+-> how to quickly use play CDN, a tool which enables the development of Tailwind CSS and
+-> how to include Tailwind CSS in your production applications.
+
+Tailwind CSS is rapidly evolving these days. Tailwind CSS v3.0, the classic engine has replaced the
+JIT, i.e, the Just-In-Time engine.
+Furthermore, an enhanced version of Play CDN has been released.
+
+Let's begin with installing some tools.
+1) First, install Visual Studio Code. If not, go ahead and install it and once done, open this folder.
+If you have installed it properly, press File-> Open Folder or go to the Folder, right click and select Open with Code.
+Once I do this, the folder will open as shown.
+
+2) Now I could proceed to install Tailwind CSS but that is not really required.
+Let me tell you what this means.
+
+So, I created an HTML file named index. html. I put the boilerplate template and
+simply started writing Tailwind here. Let me explain what this means.
+I simply wrote div. container and pressed Enter.
+I will put a heading within this and along with the heading,
+I shall put a class named text black, or text yellow
+or text blue.
+Here, I shall write "text-blue-100" and along with this,
+
+3) I shall include Tailwind CSS by going to the Tailwind documentation.
+Then click on Get started. Once you do this and click Play CDN, you will see a script tag. Copy it and
+paste it into your HTML file's head element. 
+ <script src="https://cdn.tailwindcss.com"></script>
+
+I shall now save this and install an extension named Live Server.
+
+Once you install it and right-click on the page, you get an option
+called Open with Live Server. Press it and you can see the statement "This is the blue text" on the screen.
+
+I need to make "text-blue-100", and once done, the blue text appears.
+Text-blue-100 implies a light blue colour and I shall quickly change 100 to 900
+so that you can clearly see a darker shade. So we can add such classes and after doing so, we can create nice websites.
+This is the beauty of Tailwind CSS and you style your page from the HTML file itself.
+
+Now, I'd want to point out that Tailwind CSS is not a very complicated framework that will take you six, eight or twelve months to master.
+With a basic understanding of HTML, CSS and JavaScript, you can master Tailwind CSS within a maximum of 2 weeks and practice for 1 month.
+
