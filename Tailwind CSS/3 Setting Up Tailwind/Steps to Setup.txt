@@ -2,12 +2,13 @@ To setup Tailwind CSS, run these commands in the order
 
 1.  npm init -y // This initialises the directory as a NodeJs Project
 2.  npm install -D tailwindcss postcss autoprefixer vite //installs required pakages
-3.  npx tailwndcss int -p
-4.  Create a css file "style.css", add it to your HTML via link css and edit it with this content:
+3.  npx tailwindcss init -p
+4.  Create a CSS file "style.css", add it to your HTML via link css and edit it with this content:
 
 	@tailwind base;
 	@tailwind components;
-	@tailiwind utilities;
+	@tailwind utilities;
 
 5. In your tailwind.config.js file replace content[], with content["*"]
 6. Add "start": "vite" to your scripts in package.json
+7. npm run start //To open the vite server,  where all the CSS changes are tracked
