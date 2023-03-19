@@ -1,3 +1,179 @@
 DATE: 17/07/2023 - 17th March 2023
 
 SETTING UP TAILWIND CSS
+
+And then there are a lot of classes in TailWind CSS
+"Wouldn't it be problematic if we use so many classes? "
+Will it effect the size of production bundle when we ship it on to the browser
+It won't happen at all. Because TailWind has a solution for everything
+In this video I'll teach you in detail And I'll also tell you about production set up
+If you're deploying a serious project and you want to use TailWind CSS
+So how can you build your strategy
+"So why use TailWind CSS? " "And how to perform it's production setup? "
+Which means if you don't want to use " Play CDN " Then what step you've to follow
+I'll teach you all this
+The very first benefit of using TailWind CSS is You don't have to re-invent classes every-time
+And let me tell you what this means
+Look, whenever you make a website with the help of traditional TailWind
+You add the classes name in CSS and then you use those classes in your HTML
+For example you're creating a side-bar Then may be you'll create class with that name
+And it is also possible that you'll create a class with name " sidebar-para "
+And so on...
+Whenever you do things like this so you have to think about giving names every-time
+Should I re-use this class or not?
+And if you're re-using a class, then you do not know what will change by changing anything
+" Your CSS doesn't grow with your HTML & design "
+If you use TailWind CSS, so you use utility first design classes for it
+And when you go with the Utility-First approach, one of the biggest advantage is that...
+Your components will become independent
+The NavBar which have been made in one page with TailWind CSS has no connection with the NavBar in second page
+If you're using utility classes
+By changing utility class of a particular NavBar.....
+Or if you're keeping the same scheme in header footer
+If you write your CSS's HTML, that is, the HTML files in which you've created your CSS files
+If you write that, then it is possible that you've used the same class in header footer
+You want to change your header, but instead your footer changed. This becomes frustrating
+So this thing doesn't happen in TailWind CSS
+" When you make change, no risk of breaking existing templates "
+That is, the risk of breaking existing templates is minimized to a great extent
+Let's suppose I'm writing an HTML and I've added a class in my sidebar
+And another class I added in a small sidebar on the right side of my about page
+I've named both of them " Sidebar" both have ' Red " background
+But I want to keep one sidebar as 'Green' in colour and the another one as 'Red' in colour
+So I'll have to add another class in the second 'Sidebar'
+You got the point
+With Utility First Approach, you can see the change in component just by changing the classes
+And it is a great experience when you're developing
+If you try to build the site from the last video using 'Pure CSS' , you will get answers to a lot of questions you have about TailWind
+Now what I just want to say is that... we've created a website...
+A landing page in the preceding video
+I want you to try creating that landing page on your own using CSS
+You can use HTML CSS files and try to create that landing page and you'll know...
+"What role does TailWind CSS play? "
+Does TailWind CSS have any significance or not?
+You'll know about this at a very extent
+You must try adding classes and CSS in HTML tags with pure CSS You'll get answers to a lot of questions of yours
+Now here are some questions that must have came to your mind...
+Will it make your site slow?
+Look, there are so many classes, mt-2, mx-2, my-2 There are so many classes
+font-bold, And there are a lot of classes related to flex-box
+If you haven't already used flex-box in your page, will these flex-box classes be shipped in your production bundle?
+So let me explain these things First of all, It won't slow down your site
+If you have done your production setup correctly in today's date,of TailWind CSS
+Only those classes will be sent to the client's browser which are actually used in the page
+And if you are also using some classes in JavaScript, then it will also view this and add them too.
+"Will the size of your production bundle increase by a huge margin? " The answer is NO
+Classes that you used will be shipped to your client
+Which means, You don't need to be tensed about...
+My production bundle doesn't get too big, that my site will become slow by using TailWind CSS
+If you've used 4 classes Then only 4 classes will be shipped
+Same goes for 5 & 10 classes
+So I hope you got the point
+And many of you have question "What about responsiveness? "
+"Will my site be responsive? "
+TailWind comes with break points You can change CSS at particular break points
+I'll tell you how you can do that? And how you can add different classes...
+....For different devices in the same element
+So we'll learn this in upcoming videos
+And the one very common question is...
+"Isn't it as same as writing in-line CSS? "
+We can write in-line CSS, What game is being played to add these classes?
+Adding classes is totally different than writing in-line CSS
+Let me tell you
+When you use Tailwind CSS's Utility First Classes
+These Utility Classes are designed to create good websites
+If you add " mx-2 " and " mx-4 " Then the different size of these margin...
+That difference has been taken by observing many factors.
+And along with that if we talk about "Adding different Utility First Class in different devices"
+So the break points are made very deliberately
+And these Utility First Class are designed to keep your overall design very much more consistent
+And if you're using in-line CSS
+Then it is possible that you add "144 pixels " at one place and you add "132 pixels " at another
+The result of typing in-line CSS can be understood only by those who enter style tags in in-line CSS And then add style.
+And it's intellisense... Let us say you got it's intellisense But how will you know "how you can use values and units"?
+Very big properties of CSS has been made very small class in TailWind, then you won't get this advantage
+And if you want to understand more deeply why Utility First Classes are better...
+...Than in-line CSS
+So you can try creating a page using in-line CSS
+Then you'll get answers to your questions Now you know " Why use TailWind CSS? "
+There are many more reasons to use TailWind CSS
+And you'll know about them through out the course But these were the important points for "Why use TailWind CSS? "
+And now the very big question which may rise in your mind is.. " How to set-up TailWind CSS for production? "
+The steps I've provided on your screen, you can take the screenshot of this page or you can bookmark this video
+I don't know, but you must capture this moment by any mean because I'm going to tell you an optimal way to use TailWind CSS
+So far we've used " Play CDN " And for development " Play CDN " is awesome
+And it is fun. You can just simply add the classes And it works quite good
+But when you're working on a big project so you've to initialize a " NodeJS" project
+Now look here I've written "To setup TailWind CSS run these commands"
+You've to run these commands to setup a TailWind CSS project
+Firstly you've to go to a directory And there you've to write " npminit -y"
+What will it do? It'll initialize that directory as a NodeJS project
+And after that you've to install these packages npm install -D tailwindcss postcss autoprefixer
+And then VITE which will help us to start the server We've to install these packages
+And after that you've run this command " npx tailwindcss init -p "
+And this will result in generating your TailWind CSS's configuration file
+And then you'll create a "input.css" file and you've to add these entries in it
+You've to copy this all from @ to ;
+And then you've to replace " content: [] " with " content: ["*"] "
+And then you've to replace "start ":"vite " to your script in " package.json "
+And then finally you've to run "npm run start " command
+I'll tell you all this later
+But for now you must take the screenshot of this page
+This screenshot is going to be very helpful for you in future when you setup your TailWind CSS project
+So you must take the screenshot and let me follow these steps right now
+So now I'm going to create a folder and I'll name it "demotailwind "
+So basically I'm going to show you how to setup a project(demo) following the steps which I just told you
+So I'll open this folder in "VScode "
+And after opening it in "VScode " I'll create a "index.html "
+And after creating "index.html " let's suppose I want to setup my TailWind CSS project
+So let me tell you quickly what you've to do
+Firstly you've to run "npm init -y "
+This will result in generating "package.json "
+Once your "package.json " has been generated then you'll have to run the commands which I provided
+So I'll copy it quickly
+The commands I provided you..... Let me give those to you
+And look npm install -D tailwindcss postcss....
+....autoprefixer & vite
+From where did I get this?
+If you go the "setup " section of the TailWind's website
+So there you can get all of these
+If you go to the "Get Started " and then to "Using PostCSS " then you can get them all. I've just added "VITE " extra
+After installing all these packages the next step is...
+"npx tailwindcss init -p " which means you've to generate the config file of TailWind CSS
+And you've to generate the config file of PostCSS So these files have been generated
+And then I'll add " * " in content as I've told you already....
+....Adding " * " means I want to use TailWind classes in all these files
+After that I'll add "input.css" and then I'll include this "input.css" in my HTML
+So we'll use "link:css " in here
+And pay attention what I'll do here... I'll move the content of CSS file, here
+I've saved it
+And after saving I'll add a start script in "package.json "
+And then "npm run start " will start the "VITE "
+As soon as I wrote "npm run start " pay attention here.. This have generated on "localhost:3000 "
+Let me show you something
+I'll create a div in my "index.html "
+Then I'll write "bg-red-500 " here And then I'll write "lorem23 "
+And then I'll write "div.bg-purple-900 "
+And suppose I'll write "this " here And then suppose I'm writing "mx-2 " here
+I've used 3 classes here "bg-purple-900 "....
+..."mx-2 " & "bg-red-500 " You've seen that
+And they are working properly
+I'll also add "text-white " here So that I can show you this is working properly
+Everything is working smoothly You can see the text is white now
+Now observe one thing
+"mx-2 " have also been added here
+I'll inspect it by clicking right
+What will I do by clicking right? I'll inspect it
+And after inspecting it.... As soon as I move to it's "input.css "
+"input.css " only contains that files... Sorry that classes....
+...Which I've used
+You won't find "mx-3 " in here Cause I didn't use "mx-3 "
+You won't find "mx-3 " in here
+But you can surely find "mx-2 " Look here I've found "mx-2 "
+"mx-2 " can be found here because I've used "mx-2 "
+The moment I use "mx-3 " in here Let's suppose I've used "mx-3 " here
+So dynamically "input.css " will change into this with the help of "PostCSS " and then I can get "mx-3 "
+Can you see it?
+Only those classes are added which I've used in it this is the beauty of TailWind CSS
+I hope you've enjoyed this and you've also understood how to follow these steps
+I hope you all have taken the screenshot which I asked you to take
