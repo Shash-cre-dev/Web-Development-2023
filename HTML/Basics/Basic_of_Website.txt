@@ -1,0 +1,19 @@
+Inside head <head>
+<meta> tags
+    Meta - info about info
+
+external linking tags
+    link:css
+
+<title> tag
+    Title of the website placed here
+
+
+body tag <body>
+content placed here is displaced by webpage
+
+HTML Comment
+<!-- Comment Here   -->
+
+CTRL + / --SHORCUT FOR COMMENT
+can toggle between comment and no comment
