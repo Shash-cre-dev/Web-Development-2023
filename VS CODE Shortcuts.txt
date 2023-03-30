@@ -1,0 +1,18 @@
+TO ADD COMMENTS IN HTML
+CTRL + /
+
+TO COPY SAME ELEMENTS DOWN THE ROW
+CTRL + D
+
+TO AUTO COMPLETE ATTRIBUTES
+TAB
+
+TO ADD MULTIPLE ELEMENTS OF SAME TYPE IN SINGLE GO IN HTML 
+ELEMENT_TAG*X, where X is the number of elements required
+-TO MOVE BETWEEN MULTIPLE ELEMENTS - TAB
+(only be used when crreating multiple elements of same time)
+
+TO SELECT AN ITEM AND MOVE IT UP OR DOWN WITHOUT CUT/COPY
+-Select the Item
+-use ALT + DOWNWARD ARROW - For moving Down
+-use ALT + UPWARD ARROW - For moving up

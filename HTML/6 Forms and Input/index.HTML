@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h2>HTML Forms</h2>
+    <form action="/backend.php">
+      <!-- action is an endpoint where all the data of form is that
+        is collected from the user is submitted  
+        generally on the backend side-->
+
+      <div>Name: <input type="text" name="myName" /></div>
+      <div>Role: <input type="text" name="myRole" /></div>
+      <div>Email: <input type="email" name="myEmail" /></div>
+      <!-- for displaying input one below the other div- divison tag is used -->
+      <!-- name attribute provides the backend with an easy access for a specific type of data from form input  -->
+
+      <div>Date: <input type="date" name="myDate" /></div>
+
+      <div>Bonus: <input type="number" name="myBonus" /></div>
+      <!-- e can also be used for exponential, 10 to the power x -->
+
+      <div>
+        Are yoou Eligible: <input type="checkbox" name="myEligibility" />
+      </div>
+      <div>
+        Gender: Male <input type="radio" name="myGender" /> Female<input
+          type="radio"
+          name="myGender"
+        />
+      </div>
+
+      <!-- input type radio is used with checkbox tto ensure only one option can be used
+        among all the options present, keep name as same -->
+      <div><input type="reset" value="Reset" /></div>
+      <!-- Resets the Form -->
+
+      <div>
+        Write about Yourself:<textarea
+          name="myText"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <!-- A textarea for paragraphs or greater number of text lines -->
+      <!-- textarea can be modified with number of rows and columns -->
+      <div><input type="submit" value="Submit Now" /></div>
+      <!-- To Submit the form to the backend -->
+
+      <div>
+        <label for="FullName">Name</label>
+        <input type="text" name="myName" id="FullName" />
+      </div>
+      <!-- Labels can be created for inputs, for and id should be same -->
+      <!-- for is used to determine the label is for which input -->
+
+      <!-- select can be used to choose a particular object from a dropdown of objects -->
+      <!-- options can be used for adding different objects -->
+
+      <div>
+        <label for="Car">Car</label>
+        <select name="MyCar" id="Car">
+          <option value="ind">Indica</option>
+          <option value="mar">Maruti</option>
+          <option value="tat">Tata</option>
+          <option value="bm">BMW</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
