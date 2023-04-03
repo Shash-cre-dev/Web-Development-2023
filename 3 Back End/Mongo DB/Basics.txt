@@ -1,0 +1,10 @@
+MongoDB is a document database designed for ease of development and scaling
+It is inuitive and easy to use NoSQL Database
+
+mongo vs mongod
+mongo - the command line shell that connects to a specific instance
+of mongod. For writing commands.
+
+mongod - is the "Mongo Daemon" it's basically the host process for the 
+database. For taking action on the written commands.
+
