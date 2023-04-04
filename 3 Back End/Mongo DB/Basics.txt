@@ -8,3 +8,26 @@ of mongod. For writing commands.
 mongod - is the "Mongo Daemon" it's basically the host process for the 
 database. For taking action on the written commands.
 
+SQL Terms vs MongoDB Terms
+database = database
+tables = collections
+rows = documents
+columns = fields
+
+Eg : Collection
+
+{
+    name: "Al",
+    age: 18,
+    status: "D"
+    groups: ["politics", "news"]
+}
+
+Eg: Document
+
+{
+    name: "Sue",                --field:value
+    age: 26,                    --field:value
+    status: "A"                 --field:value
+    groups: ["sports", "news"]  --field:value
+}
