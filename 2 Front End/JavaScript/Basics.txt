@@ -1,0 +1,54 @@
+JavaScript is a client-side scripting language.
+
+It is used to make webpages alive.
+
+It is used to programmatically perform actions within the page.
+
+Initially known as "LiveScript" - but at that time Java was famous
+, so it was decided to position a language as the "younger brother" of Java
+would help.
+
+
+WHAT CAN JAVASCRIPT DO?
+
+JavaScript can execute not only in the browser but also on the server.
+
+JavaScript has evolved greatly as a language and is now used to perform a 
+wide variety of tasks.
+
+
+WHAT CAN IN-BROWSER JAVASCRIPT DO?
+
+Add new  HTML and change the Existing HTML From DOM.
+
+React to Events (Actions perfoormed by user/resonse from server/when pressed a key/
+mouse movement)
+
+AJAX Requests
+
+GET AND SET Cookies and use Local Storage
+
+
+WHAT CAN'T IN-BROWSER JAVASCRIPT DO?
+
+Read/Write to and from Computer Hard Disk
+
+Your Site can access permitted resources, but not your Hardware Can't
+
+Same Origin Policy ensures privacy between websites
+
+
+WHAT MAKES JAVASCRIPT UNIQUE?
+
+HTML/CSS Integration Support
+
+Simple things have Simple API(Application Program Interface)
+
+Supported by Modern Browsers. Enabled by Default
+
+JAVASCRIPT VERSIONS
+
+Maintained by Community. ECMA Standards are used to Maintain/Update JavaScript
+
+ECMA Script is a standard, and wherever ECMA used, it refers to JavaScript
+
