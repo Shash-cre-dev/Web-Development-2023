@@ -1,0 +1,2 @@
+Opening Console on Google Chrome (JavaScript)
+F12 
