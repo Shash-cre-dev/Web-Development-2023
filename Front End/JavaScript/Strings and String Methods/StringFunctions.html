@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Functions</title>
+  </head>
+  <body>
+    <script>
+      var str = "This is a String";
+      console.log(str);
+
+      //To Find first occurence of a Substring
+      //indexOf is used
+      var pos = str.indexOf("is");
+      console.log(pos);
+      //indexing starts from 0
+      //O - 2
+
+      //To Find last occurence of a Substring
+      //lastIndexOf is used
+      pos = str.lastIndexOf("is");
+      console.log(pos);
+
+      //Substring of a String
+
+      //slice is used, slice(start, end)
+      //o - start to end-1
+      var substr = str.slice(1, 6);
+      console.log(substr);
+
+      //substring can also be used
+      substr = str.substring(1, 7);
+      console.log(substr);
+
+      //substring - can't take negative value
+      //slice can take -ve values
+
+      //substr - (start, length)
+      var substr1 = str.substr(1, 7);
+      console.log(substr1);
+
+      //o starts from 1 to length 7 of the string
+
+      //To Replace a Substring
+      //replace
+      var replaced = str.replace("string", "Shashank");
+      console.log(str);
+      console.log(replaced);
+
+      //instance of replaced string is created, the old string is not modified
+
+      //For Uppercase and Lowercase
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+
+      //For Concatenation either + or concat
+      var newstr = str.concat('New String');
+      console.log(newstr);
+
+     //For White spaces
+     var space = '    this   contains          whitespaces         ';
+     console.log(space)
+     console.log(space.trim())
+
+    //trim removes spaces from the first and last of the string
+
+    //To Find a Character at Location
+    var char2 = str.charCodeAt(2);
+
+    
+    </script>
+  </body>
+</html>
