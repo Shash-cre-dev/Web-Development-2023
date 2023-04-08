@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope & Conditional Statements</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>Hi There</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium?
+      </p>
+    </div>
+    <script>
+      var string1 = "This is a String";
+      var string1 = "This is a string2";
+
+      //In JS, the string1 is modified without error
+      console.log(str1);
+
+      //This may be a problem, when one
+      //uses var with same names/ in functions while writing a big block of code
+
+      //To limit a scope - let - block level scope
+      let a = "u";
+      {
+        let a ='u6';
+        console.log(u6);
+        //o-will print u6 here, scope of a inside {}
+        //The var defined in here, will have scope within let and not the entire code
+      }
+      console.log(a)
+      //o- u
+      //as scope of this is through entire code outside {}
+
+      //{} - scope can be used in Conditional loop
+
+      //FROM NOW ON WE WILL USE let instead of var
+
+      //CONSTANT
+      const s = "this cannot be changed";
+      comsole.log(a)
+      //constant cannot be modified at all
+
+
+      //CONDITIONAL
+      let age=34;
+      if(age>18){
+        console.log("You can Vote");
+      }
+      else if(age==60){
+        console.log("You can Rest");
+      }
+      else{
+        console.log("You can't Vote");
+      }
+
+      //It can be used for form verification
+
+      //SWITCH
+      let cups = 45;
+      switch (cups){
+            case 1:
+                console.log('The value of Cups is 1')
+                break;
+
+            case 2:
+                console.log('The value of Cups is 2')
+                break;
+            
+            case 3:
+                console.log('The value of Cups is 3')
+                break;
+
+            default:
+                console.log('The value of Cups is not defined')
+                break;
+                
+      }
+
+      //break used to prevent continuos execution when one case is matched
+    </script>
+  </body>
+</html>
