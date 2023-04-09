@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays and Objects</title>
+  </head>
+  <body>
+    <div class="container">HTML</div>
+    <script>
+      let myVar = 34;
+      let myVar2 = "string";
+      let myVar3 = true;
+      let myVar4 = NaN;
+      let myVar5 = undefined;
+
+      //These are Primitive Data Types
+      //by default a variable without a value is undefined
+
+      let a;
+      //a is undefined here
+
+      //Any variable other than primitive can be Reference Data types
+
+      //OBJECTS AND ARRAYS are Reference Datatypes
+
+      //OBJECTS
+      //stores key value pair
+      let emp = {
+        name: "Shashank",
+        salary: "1 B $",
+        blogs: "Medium",
+        age: 20,
+      };
+
+      console.log(emp);
+
+      //For accessing key value pairs
+      console.log(emp.blogs);
+
+      //or
+      console.log(emp["blogs"]);
+
+      //ARRAYS ARE SPECIAL TYPES OF OBJECTS
+
+      let names = [10, 2, 3.4, "Shashank", undefined, NaN];
+      console.log(names);
+
+      //For array length
+      console.log(names.length);
+
+      //Foe sorting an Array
+      names = names.sort();
+
+      //For adding new elements at the end of Array
+      names.push("Hi there");
+      console.log(names);
+
+      //ARRAYS CAN BE USED FOR DOM
+
+      //with new Array an Array becomes an Object
+
+      let ages = new Array(2, 5.5, 16, "Twenty");
+
+      //new used to create objects
+
+      //For array of n size
+      let marks = new Array(23);
+
+      //array of 23 length with all elements undefined
+    </script>
+  </body>
+</html>
