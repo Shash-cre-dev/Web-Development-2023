@@ -1,0 +1,243 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="basic.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </div>
+    </body>
+</html>
+
+
+<!-- To Understand Flexbox -->
+<!-- A Parent Element is present which becomes the Flexbox Container -->
+<!-- A number of child elements inside that parent element can be considered as flex items -->
+
+<!-- Here nav is parent element and div's inside it are child element -->
+<!-- Other eg can be ul or ol be the parent element and li's inside them be the children element -->
+
+<!-- To make flexbox we add display:flex to the class of the parent element -->
+<!-- 
+
+(parent class)
+.container{
+    display: flex;
+} 
+ -->
+
+ <!-- /* By default flexbox, Elements take space from left to right  
+ /* By default flexbox is a block element that takes up the entire width available on the screen*/
+
+ */ -->
+ 
+ <!-- 
+FLEX DIRECTION
+
+A Flexbox container always has a direction
+
+By default the flex direction is row (horizontal), starting from LHS to going RHS
+Therefore, the Main Axis goes from Left to Right (horizontal)
+and Cross Axis goes from top to bottom (vertical)
+
+This is not the case always, depending upon the flex direction, the axis can be swapped
+for flex direction column, the main axis is top to bottom (vertical)
+and Cross Axis goes from left to right (horizontal)
+
+Depending upon the main and cross axis many css properties apply
+
+By default flex-direction: row, elements are placed left to right(ie Main Axis L-R, Cross Axis T-B)
+
+For flex-direction: column elements are stacked from top to bottom (Main Axis T-B, Cross Axis L-R)
+-->
+
+<!-- 
+JUSTIFY CONTENT (Works on the Flex Container)
+
+It allows to position flex items together along the Main Axis
+
+justify-content: flex-start (by default), all elements are sticking at the start of the main axis
+
+justify-content: flex-end, all elements are sticking at the end of the main axis
+
+justify-content: center; all elements will stick at the center of the main axis
+
+justify-content: space-around; it provides space between each element on LHS and RHS (elements don't stick at any ends of Main axis)
+
+justify-content: space-betweem; it provides an equal space  between each element (elements  stick at the ends of Main axis)
+
+justify-content: space-evenly; it provides space between the elements same as of space-around but here space with the ends of Main axis is equal to the space between elements
+
+-->
+
+<!-- 
+POSITIONING ITEMS
+
+To position items individually along the Main Axis use margin-left or margin-right property.
+Target it by using respecive class names of the flex items.
+
+margin-left: auto - places an element at the end of the Main Axis (puts a margin from the left side)
+
+margin-left: right - places an element at the start of the Main Axis (puts a margin from the right side)
+
+other values of margin-left or right can to used also like for px or rem
+
+Note that the element on which it applies also affects other elements if they are after it
+
+Eg
+
+.search{
+    margin-left: auto 
+}
+
+It makes search element at the end of the Main Axis, but since logout is also after th search element
+it also gets moved to the end of the Main Axis
+
+For flex direction: column
+margin-top and margin-bottom are used similarly
+
+-->
+
+<!-- 
+FLEX PROPERTY
+
+Allows you to set width of the flex items with respect to the flex container
+(makes the flex items responsive when the size of flex container changes)
+
+applies to children items or their respective classes
+
+.container > div {
+    flex: 1;
+}
+
+all div (children elements) take up equal space, they expand or shrink equally when flex container size is changes
+ 
+flex is a short hand property for flex-grow, flex-shrink, flex-basis which we shall discuss later
+
+container > .search{
+    flex: 2;
+}
+search element takes twice as space as other contianers and grows or shrinks according to it
+
+using flex container > flex items (or specific flex items) is more specific and gives higher priority
+
+another approach is to make a single item do all the flexing (grow or shrink) and other items are of fixed width and move according to it
+
+.search{
+    flex: 2 (1 or any value doen't matter as single element is only flexing);
+}
+
+only the search elements takes more width(twice as compared to the fixed width of Home and Logout) and both of these move according to the flexing of Search Item
+
+-->
+
+<!-- 
+ALIGN ITEMS (Works on the Flex Container)
+   
+Now, We are going to position the elements across the Cross Axis (by default Top to Bottom) 
+
+By default the align-items: stretch; 
+   
+all the flex items stretch across the cross axis, we can see this by increasing the height of the
+flex container
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  height: 100%;
+}
+
+height: 100% only works when html, body height is set to 100% otherwise it will be the height of the flex container
+
+align-items: flex-start ; all flex items stick to the start of the Cross Axis and only take as much height as they are required to display their content
+
+align-items: flex-end ; all flex items stick to the end of the Cross Axis and only take as much height as they are required to display their content
+
+align-items: center; all flex items are moved at the center of the Cross Axis
+
+TO CENTER AN ITEM IN THE CENTER OF THE FLEX BOX CONTAINER
+align-items + justify-content set at center can be used
+
+
+.container{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+Places all the flex items of the flex container at the center of the flex container
+
+TO ALIGN THE INDIVIDUAL ITEMS
+align-self property can be used in respective class names of the flex items
+
+.logout{
+    align-self: flex-start;
+}
+
+logout is moved to the start of the Cross Axis
+
+.home {
+  align-self: flex-end;
+}
+moves Home to the end of the Cross Axis
+-->
+
+
+<!-- FLEX DIRECTION COLUMN
+
+Now Flex-direction: column; alligns flex items from top to bottom inside the flex container
+
+Now the Main Axis is Top to Bottom
+and the Cross Axis is Left to Right
+
+JUSTIFY CONTENT (Works on the Flex Container)
+
+To work with the properties of flex box, set the body, html and flex container height to 100% or any value
+before applying the properties
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+  background-color: #ffeead;
+}
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+justify-content: flex-end; places all the flex items at the end of the Main Axis (Here the Bottom of the flex Container)
+justify-content: flex-start; places all the flex items at the start of the Main Axis (Here the Top of the flex Container)
+
+similarly for the other justify-content properties
+
+ALIGN ITEMS (Works on the Flex Container)
+
+Helps in aligning flex items along the Cross Axis, 
+by default align-items: stretch (flex items strech along the Cross Axis covering entire width)
+
+align-items: flex-start; places flex items at the start of the Cross Axis (here left of the flex container)
+align-items: flex-end; places flex items at the end of the Cross Axis (here right of the flex container)
+
+To place flex items at the center , justify-content and align-items shoud be set to center
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: flex-end;
+}
+
+places the flex items at the bottom right of the flex container
+-->
+
