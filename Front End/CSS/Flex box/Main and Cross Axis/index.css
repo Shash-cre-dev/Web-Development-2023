@@ -1,0 +1,14 @@
+
+.container{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction: column;
+}
+
+/* By default flexbox, Elements take space from left to right  */
+/* By default flexbox is a block element that takes up the entire width available on the screen*/
+
+/* By default flex-direction: row, elements are placed left to right(ie Main Axis L-R, Cross Axis T-B)
+
+For flex-direction: column elements are stacked from top to bottom (Main Axis T-B, Cross Axis L-R)
+*/

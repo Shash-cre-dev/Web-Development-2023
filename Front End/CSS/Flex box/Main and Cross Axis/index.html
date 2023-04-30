@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="basic.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav class="container">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </body>
+</html>
+
+<!-- To Unbderstand Flexbox -->
+<!-- A Parent Element is present which becomes the Flexbox Container -->
+<!-- A number of child elements inside that parent element can be considered as flex items -->
+
+<!-- Here nav is parent element and div's inside it are child element -->
+<!-- Other eg can be ul or ol be the parent element and li's inside them be the children element -->
+
+<!-- To make flexbox we add display:flex to the class of the parent element -->
+<!-- 
+
+(parent class)
+.container{
+    display: flex;
+} 
+ -->
+
+ <!-- A Flexbox container always has a direction
+
+By default the flex direction is row (horizontal), starting from LHS to going RHS
+Therefore, the Main Axis goes from Left to Right (horizontal)
+and Cross Axis goes from top to bottom (vertical)
+
+This is not the case always, depending upon the flex direction, the axis can be swapped
+for flex direction column, the main axis is top to bottom (vertical)
+and Cross Axis goes from left to right (horizontal)
+
+Depending upon the main and cross axis many css properties apply
+-->
