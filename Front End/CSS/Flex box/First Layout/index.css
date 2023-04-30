@@ -1,0 +1,8 @@
+
+.container{
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+/* By default flexbox, Elements take space from left to right  */
+/* By default flexbox is a block element that takes up the entire width available on the screen*/
