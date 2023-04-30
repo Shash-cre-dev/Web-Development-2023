@@ -8,6 +8,18 @@
 }
 
 
+.home {
+    align-self: flex-end;
+  }
+
+
+.logout{
+    align-self: flex-start;
+}
+
+
+
+
 
 
 
