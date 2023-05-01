@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="index.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>
+
+<!-- To understand Grid 
+There is a Parent Container known as Grid Container
+
+and child elements inside Parent Container known as Grid Items
+
+To change into grid
+
+Grid Container display : grid;
+
+.container{
+    display: grid;
+}
+
+By Default these items would be on stacked on top of each other as default grid has only a single column
+
+To change this 
+grid-template-columns and grid-templlate-rows used
+
+grid-template-columns defines width of the mentioned columns
+grid-template-rows defines height of the rows
+
+.container {
+    display: grid;            
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 50px 50px;
+}
+
+Here the grid contains 3 columns of 100 px, auto, 100px width (Top to Bottom)
+Here the grid contains 2 rows of 50 px, 50 px height (Left to Right)
+
+Total = 3 * 2 = 6 Grid items
+
+auto - takes as much as space provided by the grid container
+
+Another Example
+
+.container {
+    display: grid;
+    grid-template-columns: 100px auto;                grid-template-rows: 50px 50px 200px;
+    grid-template-rows: 50px 50px 200px;    
+}
+
+Here the grid contains 2 columns of 100 px, auto width (Top to Bottom)
+Here the grid contains 3 rows of 50 px, 50 px, 200px height (Left to Right)
+
+Total = 2 * 3 = 6 Grid items
+
+TO GIVE A GAP BETWEEN Grid ITEMS
+grid-gap: 3px;
+
+-->
+
+<!-- 
+FRACTION UNITS AND REPEAT
+
+TO MAKE THE COLUMNS AND ROWS OF GRID RESPONSIVE UNIFORMALLY
+
+We used the fr (Fraction Units) while defining grid-template-columna and grid-template-rows
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    grid-gap: 3px;
+}
+
+here there would be 3 coulns of 1fr each, the entire grid is divided into 3 fr and each column gets a single fr
+each item grows and shrinks uniformly
+
+grid-template-columns: 1fr 2fr 1fr;
+
+the entire grid is divided into 4 fr and column 2 gets 2 fr, column 1 and 3 1fr each. ie column 2 takes two times space and grows 
+
+A shortcut to define these fr is repeat function
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    grid-gap: 3px;
+}
+
+repeat(number or rows or columns, value)
+
+grid-template-coulumns: repeat(3, 1fr); creates 3 coulums of 1 fr each
+grid-template-rows: repeat(2, 50px); creates 2 rows of 50px each
+
+
+TO CREATE GRID BY SHORTCUT USE only grid-template
+
+.container {
+grid-template: grid-template: repeat(2, 50px) / repeat(3, 1fr);
+}
+
+creates grid with 2 rows 50 px each and 3 columns 1 fr each (Total 2 * 3 = 6 grid items)
+grid template: rows / columns
+-->
