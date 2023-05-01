@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="basic.css">
+        <link rel="stylesheet" href="index.css">
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </body>
+</html>
+
+<!-- To understand Grid 
+There is a Parent Container known as Grid Container
+
+and child elements inside Parent Container known as Grid Items
+
+To change into grid
+
+Grid Container display : grid;
+
+.container{
+    display: grid;
+}
+
+By Default these items would be on stacked on top of each other as default grid has only a single column
+
+To change this 
+grid-template-columns and grid-templlate-rows used
+
+grid-template-columns defines width of the mentioned columns
+grid-template-rows defines height of the rows
+
+.container {
+    display: grid;            
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 50px 50px;
+}
+
+Here the grid contains 3 columns of 100 px, auto, 100px width (Top to Bottom)
+Here the grid contains 2 rows of 50 px, 50 px height (Left to Right)
+
+Total = 3 * 2 = 6 Flex items
+
+auto - takes as much as space provided by the grid container
+
+Another Example
+
+.container {
+    display: grid;
+    grid-template-columns: 100px auto;                grid-template-rows: 50px 50px 200px;
+    grid-template-rows: 50px 50px 200px;    
+}
+
+Here the grid contains 2 columns of 100 px, auto width (Top to Bottom)
+Here the grid contains 3 rows of 50 px, 50 px, 200px height (Left to Right)
+
+Total = 2 * 3 = 6 Flex items
+
+TO GIVE A GAP BETWEEN FLEX ITEMS
+grid-gap: 3px;
+
+-->
