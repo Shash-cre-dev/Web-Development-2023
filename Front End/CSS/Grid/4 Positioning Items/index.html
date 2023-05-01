@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="basic.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">HEADER</div>
+      <div class="menu">MENU</div>
+      <div class="content">CONTENT</div>
+      <div class="footer">FOOTER</div>
+    </div>
+  </body>
+</html>
+
+<!-- To understand Grid 
+There is a Parent Container known as Grid Container
+
+and child elements inside Parent Container known as Grid Items
+
+To change into grid
+
+Grid Container display : grid;
+
+.container{
+    display: grid;
+}
+
+By Default these items would be on stacked on top of each other as default grid has only a single column
+
+To change this 
+grid-template-columns and grid-templlate-rows used
+
+grid-template-columns defines width of the mentioned columns
+grid-template-rows defines height of the rows
+
+.container {
+    display: grid;            
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 50px 50px;
+}
+
+Here the grid contains 3 columns of 100 px, auto, 100px width (Top to Bottom)
+Here the grid contains 2 rows of 50 px, 50 px height (Left to Right)
+
+Total = 3 * 2 = 6 Grid items
+
+auto - takes as much as space provided by the grid container
+
+Another Example
+
+.container {
+    display: grid;
+    grid-template-columns: 100px auto;                grid-template-rows: 50px 50px 200px;
+    grid-template-rows: 50px 50px 200px;    
+}
+
+Here the grid contains 2 columns of 100 px, auto width (Top to Bottom)
+Here the grid contains 3 rows of 50 px, 50 px, 200px height (Left to Right)
+
+Total = 2 * 3 = 6 Grid items
+
+TO GIVE A GAP BETWEEN Grid ITEMS
+grid-gap: 3px;
+
+-->
+
+<!-- 
+FRACTION UNITS AND REPEAT
+
+TO MAKE THE COLUMNS AND ROWS OF GRID RESPONSIVE UNIFORMALLY
+
+We used the fr (Fraction Units) while defining grid-template-columna and grid-template-rows
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    grid-gap: 3px;
+}
+
+here there would be 3 coulns of 1fr each, the entire grid is divided into 3 fr and each column gets a single fr
+each item grows and shrinks uniformly
+
+grid-template-columns: 1fr 2fr 1fr;
+
+the entire grid is divided into 4 fr and column 2 gets 2 fr, column 1 and 3 1fr each. ie column 2 takes two times space and grows 
+
+A shortcut to define these fr is repeat function
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    grid-gap: 3px;
+}
+
+repeat(number or rows or columns, value)
+
+grid-template-coulumns: repeat(3, 1fr); creates 3 coulums of 1 fr each
+grid-template-rows: repeat(2, 50px); creates 2 rows of 50px each
+
+
+TO CREATE GRID BY SHORTCUT USE only grid-template
+
+.container {
+grid-template: grid-template: repeat(2, 50px) / repeat(3, 1fr);
+}
+
+creates grid with 2 rows 50 px each and 3 columns 1 fr each (Total 2 * 3 = 6 grid items)
+grid template: rows / columns
+-->
+
+<!-- POSITIONING ITEMS
+We will target the class names of the grid items
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+HEADER will be placed from column line 1 to column line 3 (taking the entire space)
+
+no of column lines = no of columns + 1
+
+Shortcut
+.header {
+    grid-column: 1/3;
+}
+
+.footer{
+  grid-column: 1/3;
+}
+
+Now FOOTER also spans the entire width of the grid container
+
+grid-column: 1/-1 gives the same output
+
+.header {
+    grid-column: 1/-1;
+}
+
+.footer{
+  grid-column: 1/-1;
+}
+
+Suppose no of coluns increased now
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+}
+
+No of columns = 12 with 1 fr each
+
+.content {
+    grid-column: 2/-1 ;
+}
+
+//Here CONTENT spans from column line 2 till the last column line 
+
+with -1, it spans till the end of grid container ie the last column line
+
+It can be used when one doesn't knows the number of columns in the grid container
+
+
+grid-row can be used similarly as grid-column
+Number of row lines = no. of columns + 1
+
+.menu {
+    grid-row: 1 / 3;
+}
+
+grid spans from row line 1 to row line 3 
+-->
