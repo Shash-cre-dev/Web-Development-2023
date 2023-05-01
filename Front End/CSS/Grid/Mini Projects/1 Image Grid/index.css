@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* span allows to span the number of rows or columns for that specific grid item 
+Used inside the classes of grid items with grid-column pr grid-row
+*/
+
+/* To remove te empty spaces between grid items
+grid-auto-flow: dense is used
+
+by default it is set to grid-auto-flow: row; due to which empty spaces are created when images are trying to fit the required space
+
+*/
